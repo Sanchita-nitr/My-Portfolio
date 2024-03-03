@@ -29,8 +29,6 @@
     }
 
     #me {
-        position: fixed;
-        display: block;
         background-image: image-set("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROp25eVzVouolPsvULoXy7zFDFLtcqwBnO9W58CidREA&s");
         border: 1px solid black;
         border-radius: 5px;
@@ -42,10 +40,12 @@
     }
 
     #me a {
+        list-style: none;
         text-decoration: none;
     }
 
     #me li {
+        list-style: none
         display: inline;
         display: flex;
         flex-direction: row;
@@ -63,13 +63,12 @@
 
     #background-img {
         border: 5px solid black;
-        border-radius: 10px;
-        box-shadow: 15px 5px 3px rgb(0, 30, 49);
+        border-radius: 5px;
     }
 
     #contact-img {
         border: 5px solid rgb(0, 6, 8);
-        border-radius: 10px;
+        border-radius: 5px;
     }
     
     #details {
@@ -148,7 +147,7 @@
         width: 500px;
     }
 
-        .Format {
+   .Format {
         top: 60%; /* Adjust position of contact form */
         left: 50%;
         transform: translateX(-50%);
@@ -179,43 +178,40 @@
 
     #me img {
         height: 30px; /* Reduce size of social media icons */
-        margin-right: 10px; /* Add spacing between icons */
+        width: 30px
+        margin-right: 5px; /* Add spacing between icons */
     }
 
     #background-img,
     #contact-img {
         height: auto; /* Allow images to resize proportionally */
         width: 100%; /* Make images take full width of the screen */
+        margin-left: auto;
+        margin-right: auto;
+        
     }
 
     #details {
-        font-size: 80px
-        top: 50%; /* Adjust position of contact details */
-        left: 51%;
-        transform: translate(-50%, -50%);
+        top: 30%; /* Adjust position of contact details */
+        left: 60%;
         font-size: 30px; /* Adjust font size */
     }
 
     .Format {
-        top: 50%; /* Adjust position of contact form */
-        left: 50%;
-        transform: translateX(-50%);
-        padding-top: 10px; /* Adjust padding for spacing */
-        font-size: 23px;
+        top: 54%; /* Adjust position of contact form */
+        padding-top: 5px; /* Adjust padding for spacing */
+        font-size: 10px;
     }
 
     .Format input[type="text"],
     .Format input[type="email"],
     .Format input[type="number"],
     .Format input[type="text-area"] {
-        width: 80%; /* Make input fields take up 80% of the width */
         max-width: 100%;/* Set maximum width for input fields */
-        margin-bottom: 10px; /* Add spacing between input fields */
     }
 
     #Submit input[type="button"] {
         width: 100%; /* Make button take full width */
-        max-width: 200px; /* Set maximum width for button */
     }
         
 }
