@@ -45,7 +45,7 @@
     }
 
     #me li {
-        list-style: none
+        list-style: none;
         display: inline;
         display: flex;
         flex-direction: row;
@@ -174,6 +174,7 @@
     }
     @media screen and (max-width: 600px) {
     #me {
+        position: static;
         margin-top: 20px; /* Add margin for spacing */
     }
 
@@ -186,7 +187,7 @@
     #background-img,
     #contact-img {
         height: auto; /* Allow images to resize proportionally */
-        width: 100%; /* Make images take full width of the screen */
+        width: 105%; /* Make images take full width of the screen */
         margin-left: auto;
         margin-right: auto;
         
@@ -194,13 +195,15 @@
 
     #details {
         top: 47%; /* Adjust position of contact details */
-        left: 42%;
+        left: 35%;
         font-size: 25px; /* Adjust font size */
     }
 
     .Format {
         top: 54%; /* Adjust position of contact form */
-        font-size: 5px;
+        font-size: 0.5px;
+        width: 50%;
+        
     }
 
     .Format input[type="text"],
