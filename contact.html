@@ -58,6 +58,7 @@
 
     #me img:hover {
         transform: scale(1.3);
+        transition: all 0.3s ease;
     }
 
     #background-img {
@@ -70,40 +71,19 @@
         border: 5px solid rgb(0, 6, 8);
         border-radius: 10px;
     }
-
-    #photo {
-        position: absolute;
-        z-index: 1;
-        top: 45%;
-        left: 5%;
-    }
-
-    #photo img {
-        filter: drop-shadow(30px 20px 15px rgba(1, 35, 42, 0.726));
-        height: 560px;
-        border: 3.5px solid rgba(1, 42, 46, 0.731);
-        border-style: groove;
-        border-radius: 10px;
-        box-shadow: 5px 5px 5px rgba(252, 252, 252, 0.776);
-    }
-
-    #photo img:hover {
-        transform: scale(1.1);
-        transition: 2s;
-    }
-
+    
     #details {
         position: absolute;
         color: aliceblue;
         top: 70%;
-        left: 45.4%;
+        left: 480px;
         font-size: 80px;
     }
 
     .Format {
         position: absolute;
         top: 60%;
-        left: 13%;
+        left: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -186,15 +166,6 @@
 
     }
     @media screen and (max-width: 600px) {
-    #navbar {
-        font-size: 16px; /* Reduce font size for smaller screens */
-    }
-
-    #me {
-        position: static; /* Remove fixed positioning */
-        margin-top: 20px; /* Add margin for spacing */
-    }
-
     #me img {
         height: 30px; /* Reduce size of social media icons */
         margin-right: 10px; /* Add spacing between icons */
@@ -231,7 +202,6 @@
 
     #Submit input[type="button"] {
         width: 100%; /* Make button take full width */
-        max-width: 200px; /* Set maximum width for button */
     }
 }
 </style>
@@ -299,9 +269,7 @@
             </ul>
         </li>
     </div>
-
-    <div id="photo"> <img src="./Portfolio/Contact.jpeg"> </div>
-
+    
 </body>
 
 </html>
