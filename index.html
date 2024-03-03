@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Sanchita's Personal Portfolio</title>
+</head>
+<style>
+    body {
+        background: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: image-set("https://png.pngtree.com/thumb_back/fh260/background/20190221/ourmid/pngtree-technological-sense-geometric-line-simple-image_19419.jpg");
+    }
+
+    #navbar {
+        border: 5px solid rgba(255, 255, 255, 0.549);
+        border-radius: 25px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        background-image: image-set(" https://png.pngtree.com/background/20230419/original/pngtree-website-science-and-technology-light-effect-ring-background-picture-image_2448025.jpg ");
+    }
+
+    #navbar a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #navbar li {
+        display: inline;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+
+    #img {
+        position: absolute;
+        left: 3%;
+        padding-top: 5.5%;
+    }
+
+    #img img {
+        height: 560px;
+        border: 3.5px solid rgba(255, 254, 254, 0.838);
+        border-radius: 3px;
+        box-shadow: 15px 5px 30px rgba(5, 47, 74, 0.737);
+        filter: brightness(120%);
+        filter: contrast(120%);
+        transition: all 0.3s ease;
+    }
+
+    #img img:hover {
+        transform: scale(1.1);
+        transition: 1.5s;
+    }
+
+    #content li {
+        display: inline;
+        display: flex;
+        flex-direction: column;
+        color: rgba(255, 255, 255, 0.781);
+        font-size: 40px;
+        font-weight: bold;
+        font-family: cursive;
+        margin-top: 45px;
+        position: relative;
+        top: 200px;
+        left: 36%;
+    }
+</style>
+
+<body>
+    <nav id="navbar">
+        <li>
+            <ul> <a href="index.html"> Home</a></ul>
+            <ul> <a href="about.html" target="blanck"> About </a> </ul>
+            <ul><a href="contact.html" target="_blank"> Contact </a> </ul>
+            <ul> <a href="education.html" target="_blank">Education</a></ul>
+        </li>
+    </nav>
+
+    <div id="img">
+        <img src="/Users/sanchita/Downloads/Photo.jpeg">
+    </div>
+
+    <div id="content">
+        <ul>
+            <li> Hi! Sanchita Priyadarshinee here! </li>
+            <li> A full Stack Web Developer</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
