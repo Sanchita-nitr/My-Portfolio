@@ -64,11 +64,13 @@
     #background-img {
         border: 5px solid black;
         border-radius: 5px;
+        z-index: -1;
     }
 
     #contact-img {
         border: 5px solid rgb(0, 6, 8);
         border-radius: 5px;
+        z-index: -1;
     }
     
     #details {
@@ -172,7 +174,6 @@
     }
     @media screen and (max-width: 600px) {
     #me {
-        position: static; /* Remove fixed positioning */
         margin-top: 20px; /* Add margin for spacing */
     }
 
@@ -185,21 +186,20 @@
     #background-img,
     #contact-img {
         height: auto; /* Allow images to resize proportionally */
-        width: 100vw; /* Make images take full width of the screen */
+        width: 100%; /* Make images take full width of the screen */
         margin-left: auto;
         margin-right: auto;
         
     }
 
     #details {
-        top: 45%; /* Adjust position of contact details */
-        left: 45%;
-        font-size: 20px; /* Adjust font size */
+        top: 47%; /* Adjust position of contact details */
+        left: 42%;
+        font-size: 25px; /* Adjust font size */
     }
 
     .Format {
         top: 54%; /* Adjust position of contact form */
-        padding-top: 1.5px; /* Adjust padding for spacing */
         font-size: 5px;
     }
 
@@ -207,7 +207,7 @@
     .Format input[type="email"],
     .Format input[type="number"],
     .Format input[type="text-area"] {
-        width: 80%;
+        width: 50%;
     }
 
     #Submit input[type="button"] {
