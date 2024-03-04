@@ -7,8 +7,6 @@
 </head>
 <style>
     body {
-        padding: 0;
-        margin: 0;
         background-attachment: fixed;
         background-size: cover;
         background-repeat: no-repeat;
@@ -16,7 +14,7 @@
     }
 
     #navbar {
-        border-radius: 25px;
+        border-radius: 20px;
         display: flex;
         width: 100vw;
         border: 5px solid rgba(255, 255, 255, 0.549);
@@ -33,7 +31,6 @@
     }
 
     #navbar li {
-        list-style: none;
         display: inline;
         display: flex;
         flex-direction: row;
@@ -76,19 +73,19 @@
     @media only screen and (max-width: 600px) {
         #img img{
             height: auto; 
-            justify-content: center;
-            margin-left: 0;
-            margin-right: 0;
             max-width: 100%; 
         }
-        #nav {
+        #img{
+            left: 3%;
+            padding-top: 5.5%;
+        }
+        #nav navbar{
             width: 100vw;
         }
          #content li {
              padding-top: 88%;
              font-size: 30px;
              padding-bottom: 10%;
-             justify-content: start;
          }
     }
 
